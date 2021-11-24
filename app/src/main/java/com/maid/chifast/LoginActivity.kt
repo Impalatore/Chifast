@@ -21,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         Thread.sleep(1000)
-        setTheme(R.layout.activity_intro)
+        setTheme(R.style.FoodApp)
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
