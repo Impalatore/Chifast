@@ -3,15 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/AndroidStudioProjects/Chifast/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.144921875" />
-        <entry key="..\:/Android/AndroidStudioProjects/Chifast/app/src/main/res/layout-w936dp/activity_login.xml" value="0.12670765027322403" />
-        <entry key="..\:/Android/AndroidStudioProjects/Chifast/app/src/main/res/layout/activity_intro.xml" value="0.1" />
-        <entry key="..\:/Android/AndroidStudioProjects/Chifast/app/src/main/res/layout/activity_login.xml" value="0.152" />
-        <entry key="..\:/Android/AndroidStudioProjects/Chifast/app/src/main/res/layout/activity_main.xml" value="0.12670765027322403" />
         <entry key="..\:/Android/AndroidStudioProjects/Foodapp/app/src/main/res/drawable/chifastlogo.xml" value="0.14635416666666667" />
         <entry key="..\:/Android/AndroidStudioProjects/Foodapp/app/src/main/res/drawable/splashscreen.xml" value="0.2703125" />
         <entry key="..\:/Android/AndroidStudioProjects/Foodapp/app/src/main/res/layout/activity_intro.xml" value="0.152" />
         <entry key="..\:/Android/AndroidStudioProjects/Foodapp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/carlo/Desktop/Chifast/app/src/main/res/layout/activity_intro.xml" value="0.21014492753623187" />
+        <entry key="..\:/Users/carlo/Desktop/Chifast/app/src/main/res/layout/activity_login.xml" value="0.15789473684210525" />
+        <entry key="..\:/Users/carlo/Desktop/Chifast/app/src/main/res/layout/activity_main.xml" value="0.2" />
       </map>
     </option>
   </component>

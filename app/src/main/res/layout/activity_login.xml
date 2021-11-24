@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:background="@drawable/login"
-    tools:context=".ui.login.LoginActivity">
+    tools:context=".LoginActivity">">
 
     <ImageView
         android:id="@+id/imageView7"
@@ -54,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/username" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/btnlogin"
         android:layout_width="260dp"
         android:layout_height="59dp"
         android:layout_gravity="start"
@@ -63,13 +63,31 @@
         android:background="@drawable/rectangulorojo"
         android:backgroundTint="#FF1546"
         android:enabled="false"
-        android:text="Ingresa o Registrate"
+        android:text="Ingresar"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.2"/>
+        app:layout_constraintVertical_bias="0.103" />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="260dp"
+        android:layout_height="59dp"
+        android:layout_gravity="start"
+        android:background="@drawable/rectangulorojo"
+        android:backgroundTint="#FF1546"
+        android:enabled="false"
+        android:text="Registrate"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.361" />
 
     <ProgressBar
         android:id="@+id/loading"
