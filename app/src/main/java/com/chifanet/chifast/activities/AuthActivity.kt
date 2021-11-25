@@ -1,16 +1,20 @@
-package com.chifanet.chifast
+package com.chifanet.chifast.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
-import androidx.activity.R.id;
-
-import kotlin.concurrent.thread
+import com.chifanet.chifast.HomeActivity
+import com.chifanet.chifast.ProviderType
+import com.chifanet.chifast.R
+import com.chifanet.chifast.firestore.FirestoreClass
+import com.chifanet.chifast.models.User
+import com.google.firebase.auth.FirebaseUser
 
 class AuthActivity : AppCompatActivity() {
 
@@ -46,7 +50,17 @@ class AuthActivity : AppCompatActivity() {
                         username.text.toString(),
                         password.text.toString()
                     ).addOnCompleteListener{
+
                         if (it.isSuccessful){
+                            val firebaseUser:FirebaseUser = it.result!!.user!!
+
+                            val user = User(
+                                firebaseUser.uid,
+                                username.text.toString().trim{ it <= ' ' }
+                            )
+
+                            FirestoreClass().registerUser(this@AuthActivity,user)
+
                             showHome(it.result?.user?.email?:"", ProviderType.BASIC)
                         }else{
                             showAlert()
@@ -89,5 +103,14 @@ class AuthActivity : AppCompatActivity() {
             putExtra("provider", provider.name)
         }
         startActivity(homeIntent)
+    }
+
+    fun userRegistrationSucess(){
+
+        Toast.makeText(
+            this@AuthActivity,
+            resources.getString(R.string.registro_exitoso),
+            Toast.LENGTH_SHORT
+        ).show()
     }
 }
