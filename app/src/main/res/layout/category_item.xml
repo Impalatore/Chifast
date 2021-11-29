@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:id="@+id/card_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="@color/white"
+    android:outlineAmbientShadowColor="#FF1546"
+    android:outlineSpotShadowColor="#FF1546"
+    app:strokeColor="#FF1546"
+    app:cardCornerRadius="23dp"
+    app:strokeWidth="1.5dp"
+    android:layout_marginHorizontal="5dp"
+    app:cardElevation="15dp"
+    android:layout_height="75dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="35dp"
+            tools:src="@drawable/ic_sopa"
+            android:layout_height="30dp"
+            app:tint="#FF1546" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:textColor="#FF1546"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Sopas"/>
+
+    </LinearLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>
